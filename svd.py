@@ -2,6 +2,10 @@ import numpy as np
 from numpy import linalg as LA
 import matplotlib as mp
 
+A = mp.image.imread(pic,format=png)
+
+print(A)
+
 A = [[3, 5, 1],[6, 2, 10],[4, 3, 7]]
 
 A_SYM = np.dot(np.transpose(A),A)
