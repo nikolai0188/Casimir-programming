@@ -6,6 +6,8 @@ from scipy import misc
 
 A = misc.imread('face.png')
 
+A = A[1,:,:]
+
 A_SYM = np.dot(np.transpose(A),A)
 
 D,U = LA.eig(A_SYM)
