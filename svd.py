@@ -1,8 +1,9 @@
 import numpy as np
 from numpy import linalg as LA
 import matplotlib as mp
+from matplotlib import image as IM
 
-A = mp.image.imread(pic,format=png)
+A = IM.imread(pic,format=png)
 
 print(A)
 
