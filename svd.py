@@ -12,13 +12,13 @@ from scipy import misc
 
 A = [[4, 6, 2],[12, 5, 8],[3, 5, 14]]
 
-A_SYM = numpy.dot(np.transpose(A),A)
+A_SYM = numpy.dot(numpy.transpose(A),A)
 
 D,U = linalg.eig(A_SYM)
 
 D = numpy.dot(D,D)
 
-A_SYM = numpy.dot(A,np.transpose(A))
+A_SYM = numpy.dot(A,numpy.transpose(A))
 
 D,V = linalg.eig(A_SYM)
 
