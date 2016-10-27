@@ -1,4 +1,4 @@
-import numpy as np
+import numpy
 from numpy import linalg as LA
 import matplotlib as mp
 import scipy
@@ -12,13 +12,13 @@ from scipy import misc
 
 A = [[4, 6, 2],[12, 5, 8],[3, 5, 14]]
 
-A_SYM = np.dot(np.transpose(A),A)
+A_SYM = numpy.dot(np.transpose(A),A)
 
 D,U = LA.eig(A_SYM)
 
-D = np.dot(D,D)
+D = numpy.dot(D,D)
 
-A_SYM = np.dot(A,np.transpose(A))
+A_SYM = numpy.dot(A,np.transpose(A))
 
 D,V = LA.eig(A_SYM)
 
