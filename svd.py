@@ -22,4 +22,7 @@ A_SYM = numpy.dot(A,np.transpose(A))
 
 D,V = linalg.eig(A_SYM)
 
+print(A)
+print(U)
+print(V)
 print(D)
