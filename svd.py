@@ -7,7 +7,7 @@ import scipy
 from scipy import linalg as LA2
 from scipy import misc
 import matplotlib.pyplot as plt
-%matplotlib inline
+#%matplotlib inline
 
 img = mpimg.imread('face.png')
 B = np.zeros(img.shape)
